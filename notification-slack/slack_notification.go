@@ -23,11 +23,10 @@ import (
 	"embed"
 	"strings"
 
-	"github.com/apache/incubator-answer-plugins/util"
+	slackI18n "github.com/apache/answer-plugins/notification-slack/i18n"
+	"github.com/apache/answer-plugins/util"
+	"github.com/apache/answer/plugin"
 	"github.com/go-resty/resty/v2"
-
-	slackI18n "github.com/apache/incubator-answer-plugins/notification-slack/i18n"
-	"github.com/apache/incubator-answer/plugin"
 	"github.com/segmentfault/pacman/i18n"
 	"github.com/segmentfault/pacman/log"
 )

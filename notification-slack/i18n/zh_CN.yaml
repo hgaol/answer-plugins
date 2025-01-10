@@ -108,3 +108,7 @@ plugin:
           other: "<{{.TriggerUserUrl}}|{{.TriggerUserDisplayName}}> 邀请你回答 <{{.QuestionUrl}}|{{.QuestionTitle}}>"
         new_question:
           other: "新问题:\n<{{.QuestionUrl}}|{{.QuestionTitle}}>\n{{.QuestionTags}}"
+        upvoted_answer:
+          other: "<{{.TriggerUserUrl}}|{{.TriggerUserDisplayName}}> 点赞了你的回答 <{{.AnswerUrl}}|{{.QuestionTitle}}>"
+        downvoted_answer:
+          other: "<{{.TriggerUserUrl}}|{{.TriggerUserDisplayName}}> 反对了你的回答 <{{.AnswerUrl}}|{{.QuestionTitle}}>"
