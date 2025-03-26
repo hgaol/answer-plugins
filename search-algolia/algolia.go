@@ -161,11 +161,8 @@ func (s *SearchAlgolia) SearchQuestions(ctx context.Context, cond *plugin.Search
 		filters += " AND " + viewsFilter
 	}
 
-	// check answers
-	if cond.AnswerAmount == 0 {
-		answersFilter = "answers=0"
-		filters += " AND " + answersFilter
-	} else if cond.AnswerAmount > 0 {
+	// check answers, to align with the search spec
+	if cond.AnswerAmount > 0 {
 		answersFilter = "answers>=" + strconv.Itoa(cond.AnswerAmount)
 		filters += " AND " + answersFilter
 	}
